@@ -1,1 +1,3 @@
-# Web-app-transaltor
+Light weight web app translator 
+transformers
+gradio API
