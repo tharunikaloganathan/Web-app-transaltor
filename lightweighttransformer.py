@@ -11,3 +11,6 @@ def translate_transformers(from_text):
     results = translation_pipeline(from_text)
     return results[0]['translation_text']
 translate_transformers('My name is Tharunika')
+interface = gr.Interface(fn=translate_transformers, 
+                         inputs=gr.inputs.Textbox(lines=2, placeholder='Text to translate'),
+                        outputs='text')
