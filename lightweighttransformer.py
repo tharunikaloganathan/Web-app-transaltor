@@ -6,7 +6,7 @@ from transformers import pipeline     # Transformers pipeline
 translation_pipeline = pipeline('translation_en_to_de')
 results = translation_pipeline('There is a rock rolling down')
 results[0]['translation_text']
-#Create Gradio Function Interface
+#Creating  Gradio Function Interface
 def translate_transformers(from_text):
     results = translation_pipeline(from_text)
     return results[0]['translation_text']
